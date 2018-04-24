@@ -1,4 +1,5 @@
 ```sql
+
 Limit (cost=67735.94..67735.94)
   -> Sort (cost=67735.94..67735.95)
     Sort Key: po.start_ship_on
@@ -17,6 +18,6 @@ Limit (cost=67735.94..67735.94)
         ->  Hash (cost=4.36..4.36)
         Buckets: 1024
     -> Index Scan using index_bhas_on_mb_and_h_id on bha (cost=0.42..4.36)
-  Index Cond: (merch_buy_id = mb.id)
+       Index Cond: (merch_buy_id = mb.id)
 
 ```
